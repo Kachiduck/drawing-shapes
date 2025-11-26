@@ -34,23 +34,17 @@ public class Shapes {
          
 
         // Task 3: How many times does Turtle turn!
-        int turns = 0;
-        for(int i = 0; i <= 3; i++) {
-         if (turtle2.left(90))
-            turns ++;
-         turtle2.forward(50);
-         turtle2.left(90);
-         turtle2.forward(50);
-         turtle2.left(90);
-         turtle2.forward(50);
-         turtle2.left(90);
-         turtle2.forward(50);
-         turtle2.forward(50);
-         System.out.print(turns);
-       }
+        int totalTurns = 0;
+        for(int i2 = 0; i2 <=3; i2++) {
+            for(int i = 0; i <= 3; i++) {
+               turtle2.forward(50);
+               turtle2.left(90);
+               totalTurns ++;
+               turtle2.setposition((int)Math.random()*200, (int) Math.random()*200);
+            }
+        } 
 
-         int totalTurns = i * turns;
-         System.out.print("<yourTurtleName> has turned " +totalTurns+ "times!");
+         System.out.print("<yourTurtleName> has turned " +totalTurns+ " times!");
 
         // Extension 1:
          
