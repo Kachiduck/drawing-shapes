@@ -36,9 +36,9 @@ public class Shapes {
                turtle3.left(90);
                totalTurns ++;
                }
+            
          
-        } turtle3.forward(50);
-
+        } 
          System.out.print("turtle3 turned " +totalTurns+ " times");
 
         // Extension 1:
